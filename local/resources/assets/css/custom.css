@@ -1,0 +1,175 @@
+.container {
+    margin-top: 20px;
+    position: relative;
+    transition: left 500ms;
+    left: 0;
+}
+
+.is-showing-nav {
+    left: 250px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    margin: 35px 0 0 0;
+    text-align: left;
+}
+
+nav > a {
+    display: block;
+    width: 220px;
+    background: #A00;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: 16px;
+    padding: .9em;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.nav-submenu a, .nav-social-share {
+    color: #FFF;
+    display: block;
+    width: 220px;
+    background: #800000;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: 16px;
+    padding: .9em;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    margin-bottom: 0;
+}
+
+.nav-social-share {
+    line-height: .9em;
+}
+
+nav a:focus {
+    outline: 0;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.nav-phone {
+    text-decoration: none;
+    text-align: center;
+    background: #800000;
+}
+
+.nav-phone:hover, .header-phone:hover {
+    text-decoration: none;
+}
+
+.share-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+header {
+    height: 50px;
+    line-height: .9em;
+    border-bottom: 2px solid #800000;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 10;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.header-phone {
+    padding: .9em;
+}
+
+header a:hover {
+    color:  #2B2A29;
+}
+
+header a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: #2B2A29;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.logo {
+    width: 20%;
+}
+
+
+
+
+
+
+#mainImage img {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.resize img {
+    max-width: 100%;
+    height: auto;
+}
+
+#welcome {
+    margin-bottom: 20px;
+}
+
+.lower {
+    margin-top: 2%;
+}
+
+.nolink, .nolink:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+    .nolink:hover h4 {
+        text-decoration: underline;
+    }
+
+.center {
+    text-align: center;
+}
+
+.phone {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#address {
+    margin-bottom: 20px;
+}
+
+#hours {
+    margin-bottom: 20px;
+}
+
