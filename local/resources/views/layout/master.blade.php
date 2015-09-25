@@ -49,13 +49,14 @@
     </script>
 </head>
 <body>
-    <div class="container" data-container itemscope itemtype="http://schema.org/GeneralContractor">
-        
+     
+
+    <div class="top-container" data-container itemscope itemtype="http://schema.org/GeneralContractor">
         @include('layout.header')
         
         @include('layout.navigation')
 
-        <div class="content">
+        <div class="content container">
             
             @yield('content')
             

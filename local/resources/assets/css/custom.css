@@ -1,8 +1,14 @@
-.container {
-    margin-top: 20px;
+body{
+background-color: #800000;
+}
+
+.top-container {
     position: relative;
     transition: left 500ms;
     left: 0;
+padding-top: 60px;
+background-color: white;
+
 }
 
 .is-showing-nav {
@@ -14,7 +20,6 @@ nav {
     top: 0;
     left: -250px;
     width: 250px;
-    margin: 35px 0 0 0;
     text-align: left;
 }
 
@@ -89,8 +94,8 @@ header {
     top: 0;
     width:100%;
     z-index: 10;
-    padding-top: 20px;
-    background: #fff;
+    padding: 10px 0;
+background-color: white;
 }
 
 .header-phone {
@@ -116,9 +121,6 @@ header a {
     width: 40px;
 }
 
-.content {
-    margin-top: 60px;
-}
 
 .logo {
     width: 20%;

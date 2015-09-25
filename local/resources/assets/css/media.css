@@ -6,22 +6,20 @@
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
     nav {
-        display: inline-block;
-        margin: 72px 0 0 53px;
+        display: block;
         left: 0;
-        position: fixed;
+        position: static;
         top: 0;
         width: 100%;
-        z-index: 10;
+        padding: 3px;
+        background-color: #AA0000;
+        border-bottom: 2px solid #800000;
     }
 
     nav > a {
         display: inline-block;
         background: #A00;
-        border-right: 1px solid rgba(0,0,0,.1);
-        border-left: 1px solid rgba(0,0,0,.1);
-        border-bottom: 2px solid #800000;
-        border
+        border: 0;
         font-size: 16px;
         padding: .3em;
         font-family: Verdana,Arial,Helvetica,sans-serif;
@@ -29,7 +27,11 @@
     }
 
     .nav-social-share {
-        display: none;
+    	position: absolute;
+    	top: 0;
+    	right: 20px;
+    	background-color: transparent;
+        border: 0;
     }
 
     .nav-phone {
@@ -41,7 +43,17 @@
     }
 
     .content {
-    margin-top: 100px;
+        margin-top: 100px;
+    }
+
+    .header, nav {
+        position: static;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .top-container{
+        padding-top: 0;
     }
 }
 
