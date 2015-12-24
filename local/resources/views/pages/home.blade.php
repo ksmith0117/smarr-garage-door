@@ -1,6 +1,15 @@
 @extends('layout.master')
 
-@section('title', 'Garage Door Installation, ServiceRepair | Smarr Garage Door - Columbia MO')
+@section('meta-data')
+<title itemprop="name">Garage Door Installation, ServiceRepair | Smarr Garage Door - Columbia MO</title>
+    <meta itemprop="about" name="description" content="Servicing the Mid-Missouri area for over 35 years, Smarr Garage Door in Columbia, MO provides repair or installation of residential and commercial doors.">
+    <meta itemprop="author" name="author" content="Smarr Garage Door">
+    <meta property="og:url" content="http://www.smarrdoors.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Smarr Garage Door" />
+    <meta property="og:description" content="Garage Door Installation, Service & Repair | Smarr Garage Door - Columbia MO" />
+    <meta property="og:image" content="http://www.smarrdoors.com/images/smarr2.png" />
+@stop
 
 @section('content')
 <div class="row">

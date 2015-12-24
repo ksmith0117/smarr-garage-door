@@ -16,11 +16,41 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('pages.home');
+    return Redirect::to('/', 301);
 });
 
 Route::get('/about', function () {
     return view('pages.about');
 });
 
+Route::get('/products', function () {
+    return view('pages.products');
+});
 
+Route::get('/service', function () {
+    return view('pages.service');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/service.html', function(){ 
+    return Redirect::to('/service', 301); 
+});
+
+Route::get('/index.html', function(){ 
+    return Redirect::to('/', 301); 
+});
+
+Route::get('/products.html', function(){ 
+    return Redirect::to('/products', 301); 
+});
+
+Route::get('/contact.html', function(){ 
+    return Redirect::to('/contact', 301); 
+});
+
+Route::get('/about.html', function(){ 
+    return Redirect::to('/about', 301); 
+});

@@ -1,29 +1,49 @@
 body{
-background-color: #800000;
+    background-color: #800000;
 }
 
 .top-container {
     position: relative;
     transition: left 500ms;
     left: 0;
-padding-top: 60px;
-background-color: white;
-
+    padding-top: 60px;
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .is-showing-nav {
     left: 250px;
 }
 
-nav {
+.overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+
+.is-showing-nav .overlay {
+    display: block;
+}
+
+nav {
+    position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     text-align: left;
+    transition: left 500ms;
 }
 
-nav > a {
+nav.is-showing-nav {
+    left: 0;
+}
+
+.nav-item {
     display: block;
     width: 220px;
     background: #A00;
@@ -32,6 +52,10 @@ nav > a {
     font-size: 16px;
     padding: .9em;
     font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.nav-submenu {
+    display: none;
 }
 
 .nav-submenu a, .nav-social-share {
@@ -51,7 +75,7 @@ nav > a {
     line-height: .9em;
 }
 
-nav a:focus {
+nav a:focus, footer a:focus {
     outline: 0;
 }
 
@@ -94,12 +118,15 @@ header {
     top: 0;
     width:100%;
     z-index: 10;
-    padding: 10px 0;
-background-color: white;
+    padding: 10px;
+    background-color: white;
 }
 
 .header-phone {
     padding: .9em;
+}
+.header-phone-text{
+    line-height: 1.2em;
 }
 
 header a:hover {
@@ -121,15 +148,56 @@ header a {
     width: 40px;
 }
 
-
 .logo {
     width: 20%;
 }
 
+.logo-image {
+    height: 40px;
+}
 
+footer {
+    background: #EEE;
+    padding: 1em;
+    text-align: center;
+}
 
+.footer-info {
+    margin-bottom: 1.5em;    
+}
 
+footer a:link {
+    text-decoration: none;
+    color: #3E42CC;
+}
 
+footer a:visited {
+    text-decoration: none;
+    color: #3E42CC;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #3E42CC;
+}
+
+.feedback {
+    background: white;
+    padding: .5em;
+    border-radius: 6px;
+    max-width: 270px;
+    margin:  0 auto 1.5em;
+    border: 2px solid #800000;
+}
+
+.feedback > h3 
+{
+    color: #800000;
+}
+
+.back-to-top {
+    height: 40px;
+}
 
 #mainImage img {
     margin-bottom: 30px;
@@ -154,9 +222,9 @@ header a {
     color: inherit;
 }
 
-    .nolink:hover h4 {
-        text-decoration: underline;
-    }
+.nolink:hover h4 {
+    text-decoration: underline;
+}
 
 .center {
     text-align: center;

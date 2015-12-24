@@ -5,18 +5,21 @@
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+   body{
+        background-color: white;
+    }
+
     nav {
         display: block;
         left: 0;
-        position: static;
         top: 0;
         width: 100%;
-        padding: 3px;
         background-color: #AA0000;
         border-bottom: 2px solid #800000;
+        z-index: 20;
     }
 
-    nav > a {
+    .nav-item {
         display: inline-block;
         background: #A00;
         border: 0;
@@ -26,40 +29,104 @@
         width: auto;
     }
 
+    .nav-container {
+        position: relative;
+        display: inline-block;
+    }
+
     .nav-social-share {
     	position: absolute;
-    	top: 0;
-    	right: 20px;
+    	top: -60px;
+    	right: 0px;
     	background-color: transparent;
         border: 0;
+        z-index: 30;
+        width: auto;
+        padding: .9em 0;
+    }
+
+    .share-link:last-child {
+        margin-right: 0;
     }
 
     .nav-phone {
         display: none;
     }
 
+    .header
+    {
+        padding: 7px 0;
+        height: 80px;
+    }
+
     .menu-icon {
         display: none;
     }
 
-    .content {
-        margin-top: 100px;
-    }
-
     .header, nav {
-        position: static;
+        position: relative;
         max-width: 960px;
         margin: 0 auto;
+    }
+
+    .header a {
+        font-size: 21px;
+        margin-right: auto;
+    }
+
+    .header-phone {
+        padding: 0;
+        vertical-align: bottom;
+    }
+
+    .header-phone-text {
+        line-height: 1.4em;
     }
 
     .top-container{
         padding-top: 0;
     }
+
+    .nav-submenu {
+        position: absolute;
+    }
+    
+    .nav-submenu.is-open {
+        display: block;        
+    }
+
+    .logo-image {
+        height: 77px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-info {
+        display: inline-block;
+        margin-left: 2em;
+        vertical-align: top;
+    }
+
+    .copyright {
+        display: block;
+    }
+
+    .logo{
+        width: auto;
+    }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .header-phone-text{
+        display: inline-block;
+    }
 
+    .header-phone {
+        vertical-align: bottom;
+    }
 }
 
 /* Larger than desktop */
