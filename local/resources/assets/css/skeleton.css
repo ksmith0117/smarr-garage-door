@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
 }
 
@@ -47,14 +47,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
     .container {
-        padding: 0 8%;
+        padding: 20px 8%;
     }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
     .container {
-       padding: 0 10%
+       padding: 20px 10%
     }
 
     .column,

@@ -1,16 +1,29 @@
 jQuery(document).on('ready', function () {
     jQuery('[data-nav-toggle], .overlay').on('click', function (e) {
+        
+        // Add class when menu is open, toggle back when closed
         jQuery('[data-container], [data-nav]').toggleClass('is-showing-nav');
-        jQuery('[data-nav-toggle]').toggle(
-            function(){
-                jQuery(this).find('[data-nav-image]').attr('{src:"/smarr-garage-door/local/resources/assets/images/icon/close-menu-30.png"}')
-            },
-            function(){
-                jQuery(this).find('[data-nav-image]').attr('{src:"/smarr-garage-door/local/resources/assets/images/icon/menu-alt-30.png"}')
-            }
-        );
+
+        // Change Menu Icon from open to close on click
+        var isShowingNav = jQuery('[data-nav]').hasClass('is-showing-nav');
+        var menuText = 'Menu';
+        var menuImagePath = "/smarr-garage-door/local/resources/assets/images/icon/menu-alt-30.png";
+        
+        if(isShowingNav)
+        {
+            menuText = "Close";
+            menuImagePath = "/smarr-garage-door/local/resources/assets/images/icon/close-menu-36.png";
+        }
+
+        var menuImageElement = jQuery(this).find('[data-nav-image]');
+        menuImageElement.attr('src', menuImagePath);
+        jQuery(this).html(menuText);
+        jQuery(this).prepend(menuImageElement);
+
+        // Prevent default click behavior on menu icon
         e.preventDefault();
     });
+
 
     jQuery('[data-nav-submenu]').on('click', function () {
 

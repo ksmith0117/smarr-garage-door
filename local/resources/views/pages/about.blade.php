@@ -90,16 +90,6 @@
                         attitude, and honesty. He will take care of all of your needs immediately with a smile on his face.
                     </div>
                 </div>
-                <h3 class="lower">Jesse, Technician</h3>
-                <div class="row">
-                    <div class="two columns resize">
-                        <img src="/smarr-garage-door/local/resources/assets/images/about-us/jesse-94.jpg" alt="Jesse" />
-                    </div>
-                    <div class="ten columns">
-                        Jesse is the newest member to our Team. He has shown an ambition to learn everything there is to learn about the
-                        door industry. He also possesses a passion for serving the Customer.
-                    </div>
-                </div>-->
             </div>
         </div>
 @stop
